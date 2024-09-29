@@ -30,7 +30,7 @@ def main() -> None:
     sys.stdin.reconfigure(encoding="utf-8")
     sys.stdout.reconfigure(encoding="utf-8")
 
-    logging.basicConfig(format="%(levelname)s %(message)s", level=logging.INFO)
+    logging.basicConfig(format="%(levelname)s %(message)s", level=logging.DEBUG)
     workspace: Workspace = Workspace(Path("out"))
 
     arguments: argparse.Namespace = parse_arguments(sys.argv)
